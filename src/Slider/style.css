@@ -1,0 +1,48 @@
+#carouselExampleControls {
+    background-color: rgb(20, 100, 192);
+    padding-bottom: 20px;
+}
+
+.carousel-control-prev-icons {
+    width: 70px;
+    height: 70px;
+    line-height: 60px;
+    background-color: black;
+}
+
+.carousel-control-next-icons {
+    width: 70px;
+    height: 70px;
+    line-height: 60px;
+    background-color: black;
+}
+
+#img1 {
+    width: 530px;
+    height: 450px;
+}
+
+#img2 {
+    width: 260px;
+    height: 450px;
+}
+
+#img3 {
+    width: 260px;
+    height: 450px;
+}
+
+@media (max-width:768px) {
+    #img1 {
+        width: 280px;
+        height: 250px;
+    }
+    #img2 {
+        width: 100px;
+        height: 250px;
+    }
+    #img3 {
+        width: 100px;
+        height: 250px;
+    }
+}

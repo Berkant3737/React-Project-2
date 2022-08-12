@@ -1,23 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import { useState } from "react";
+import Navbar from "./Navbar/Navbar";
+import Slider from "./Slider/Slider";
+import Featuredproducts from "./Products/featured products/Featuredproducts";
+import products from "./products.json";
+import bestsellers from "./bestsellers.json";
+import BestSellers from "./Products/BestSellers/BestSellers";
+import Footer from "./Footer/Footer";
 
 function App() {
+  const [number,setNumber] = useState(0)
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      
+      <Navbar/>
+      <Slider/>
+      <Featuredproducts products={products} number={number} Setnumber={setNumber} />
+      <BestSellers products={bestsellers}/>
+      <Footer/>
     </div>
   );
 }

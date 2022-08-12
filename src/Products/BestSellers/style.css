@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.bestsellers {
+    margin-left: 200px;
+    margin-right: 150px;
+}
+
+.products-title h4 {
+    font-family: Open Sans, sans-serif;
+    font-weight: bolder;
+}
+
+.products-title a {
+    color: rgb(79, 152, 209);
+    font-size: 14px;
+    text-decoration: none;
+}
+
+.products .card {
+    border-radius: 0;
+    border: 1px solid rgb(225, 225, 225);
+}
+
+.products .card:hover {
+    border-radius: 0;
+    border: 1px solid rgb(146, 179, 201);
+}
+
+.products .ShortDescription {
+    color: rgb(79, 152, 209);
+    font-size: 12px;
+    position: absolute;
+    left: 35%;
+    padding-top: 10px;
+}
+
+.tooltip-sold {
+    width: 100%;
+    height: 40px;
+    color: white;
+    background-color: rgb(34, 150, 243);
+    font-size: 12px;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tooltip h6 {
+    color: white;
+    text-decoration: none;
+}
+
+.bestsellers .card img {
+    width: 120px;
+    height: 120px;
+}
+
+.product-info {
+    font-size: 12px;
+}
+
+.product-no {
+    font-size: 12px;
+}
+
+.product-title h6 {
+    color: rgb(94, 92, 92);
+    font-size: 12px;
+}
+
+.product-money {
+    color: rgb(34, 150, 243);
+    font-size: 12px;
+}
+
+.product-money .totalproduct {
+    color: rgb(221, 90, 117);
+    font-size: 11px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10%;
+    left: 15%;
+}
+
+.product-money .cargo {
+    width: auto;
+    height: auto;
+    color: rgb(137, 137, 137);
+    background-color: rgb(238, 238, 238);
+    border: 0;
+    border-radius: 4px;
+    padding: 5px;
+}
+
+#card {
+    width: 210px;
+}
+
+#tooltip {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(34, 150, 243);
+    display: none;
+    margin-top: -8px;
+}
+
+#tooltip h6 a {
+    color: white;
+    text-decoration: none;
+}
+
+#card:hover #tooltip {
+    color: black;
+    display: inline-block;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+}
+
+.tooltip-icons {
+    width: 60px;
+    height: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgb(20, 100, 192);
+    font-size: 25px;
+}
+
+@media (max-width:768px) {
+    .bestsellers {
+        margin-left: 0;
+        margin-right: 0;
+    }
+    .bestsellers #card {
+        position: relative;
+        margin-right: 50px;
+    }
+    .test {
+        padding-right: 150px;
+    }
+}
