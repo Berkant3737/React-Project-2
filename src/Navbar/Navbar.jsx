@@ -13,7 +13,7 @@ import {
 } from "react-icons/fa";
 import { AiOutlineMenu,AiOutlineClear } from "react-icons/ai";
 
-function Navbar({number},{setNumber}) {
+function Navbar() {
   return (
     <div>
       <nav className="navbar navbar-expand-sm">
